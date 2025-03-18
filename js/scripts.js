@@ -165,7 +165,7 @@ function dineroMacarena (totalEuros){
 dineroMacarena(30000)
 
 //Ejercicio 17
-//Abby mata 5201 infectados cada semana. ¿Cuántos infectados mata al día?
+//1️⃣7️⃣Abby mata 5201 infectados cada semana. ¿Cuántos infectados mata al día?
 function asesinatosAbby (days,murdersPerWeek){
     let result=murdersPerWeek/days;
     console.log('El total de asesinatos que Abby hace al día es de '+result)
