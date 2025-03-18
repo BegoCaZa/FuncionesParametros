@@ -1,43 +1,73 @@
+
+
+//DIVISION
+function divideNumbers(numberA,numberB){
+    const getDivision= numberA/numberB;
+    return getDivision;
+}
+
+//MULTIPLY
+function multiplyNumbers(numberA,numberB){
+    const getMultiply= numberA*numberB;
+    return getMultiply;
+}
+
+//SUMA
+function sumNumbers(numberA,numberB){
+    const getSum=numberA+numberB;
+    return getSum;
+}
+
+//MODULO
+function moduleNumbers(numberA,numberB){
+    const getModule=numberA%numberB;
+    return getModule;
+}
+
+//REGLA DE TRES
+function ruleOfThree(numberA,numberB,numberC){
+    const getRule=(numberA*numberB)/numberC;
+    return getRule;
+}
+
 //*Ejercicio 1
 //1️⃣ Camila atiende 120 llamadas en 4 horas. ¿Cuántas llamadas atiende por hora?
 
-function llamadasDeCamila (calls,hours){
-    const result=calls/hours;
-    console.log("Las llamadas que Camila atiende por hora son " + result)
+function callsMadeByCamila (calls,hours){
+    const totalCalls=divideNumbers(calls,hours);
+    console.log("Las llamadas que Camila atiende por hora son " + totalCalls)
 }
 
-llamadasDeCamila(120,4);
+callsMadeByCamila(120,4);
 
 //*Ejercicio 2
 //2️⃣ Bego compró 5 cajas de lápices. Cada caja tiene 12 lápices. ¿Cuántos lápices tiene en total?
 
-function lapicesBego (box){
-    const pencils=12;
-    const result=pencils*box;
-    console.log ("El total de lápices que Bego tiene es "+ result)
+function totalPencilLeft (box,pencils){
+    const totalPencils=multiplyNumbers(box,pencils);
+    console.log ("El total de lápices que Bego tiene es "+ totalPencils)
 }
 
-lapicesBego(5)
+totalPencilLeft(5,12)
 
 //*Ejercicio 3
 //3️⃣ Camila tiene 25 caramelos y quiere repartirlos en grupos de 4. ¿Cuántos caramelos le sobrarán después del reparto?
 
-function caramelosCamila (groups){
-    const totalCaramels=25;
-    const result= totalCaramels%groups;
-    console.log ( "El resto de caramelos de Camila será "+result)
+function caramelsLeft (totalCaramels,groups){
+    const caramelsLeft=moduleNumbers(totalCaramels,groups);
+    console.log ( "El resto de caramelos de Camila será "+caramelsLeft)
 }
-caramelosCamila (4)
+caramelsLeft (25,4)
 
 //*Ejercicio 4
 //4️⃣ Sabrina recorre 90 kilómetros en 3 horas. ¿Cuántos kilómetros recorre en 2 horas?
 
-function distanciaRecorrida(totalDistance, totalTime, requestedTime) {
-    const speed = (totalDistance / totalTime)*requestedTime; 
-    console.log("En dos horas Sabrina recorre "+ speed)
+function kilometersInHours(totalDistance, totalTime, requestedTime) {
+    const kilometersDriven= ruleOfThree(totalDistance,totalTime,requestedTime);
+    console.log("En dos horas Sabrina recorre "+ kilometersDriven)
 }
 
-distanciaRecorrida(90,3,2)
+kilometersInHours(90,3,2)
 
 //*Ejercicio 5
 //5️⃣ Macarena cosechó 240 manzanas y las quiere repartir en 8 cajas. ¿Cuántas manzanas tendrá cada caja?
