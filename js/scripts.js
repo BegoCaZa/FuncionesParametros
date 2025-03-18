@@ -13,7 +13,7 @@ llamadasDeCamila(120,4);
 
 function lapicesBego (box){
     const pencils=12;
-    let result=pencils*box;
+    const result=pencils*box;
     console.log ("El total de lápices que Bego tiene es "+ result)
 }
 
@@ -24,7 +24,7 @@ lapicesBego(5)
 
 function caramelosCamila (groups){
     const totalCaramels=25;
-    let result= totalCaramels%groups;
+    const result= totalCaramels%groups;
     console.log ( "El resto de caramelos de Camila será "+result)
 }
 caramelosCamila (4)
@@ -33,7 +33,7 @@ caramelosCamila (4)
 //4️⃣ Sabrina recorre 90 kilómetros en 3 horas. ¿Cuántos kilómetros recorre en 2 horas?
 
 function distanciaRecorrida(totalDistance, totalTime, requestedTime) {
-    let speed = (totalDistance / totalTime)*requestedTime; 
+    const speed = (totalDistance / totalTime)*requestedTime; 
     console.log("En dos horas Sabrina recorre "+ speed)
 }
 
@@ -44,7 +44,7 @@ distanciaRecorrida(90,3,2)
 
 function manzanasMacarena(boxes){
     const apples=240;
-    let result=apples/boxes;
+    const result=apples/boxes;
     console.log ('El número de manzanas que tendrá cada caja es '+result)
 }
 
@@ -55,7 +55,7 @@ manzanasMacarena(8)
 
 function tornillosBego (screwsPerBox){
     const totalScrews=57;
-    let result= totalScrews%screwsPerBox;
+    const result= totalScrews%screwsPerBox;
     console.log ( "El total de tornillos que queda fuera es "+result)
 }
 tornillosBego (10)
@@ -66,7 +66,7 @@ tornillosBego (10)
 
 function dineroAbby (totalMissions){
     const missionRate=35;
-    let result=missionRate*totalMissions;
+    const result=missionRate*totalMissions;
     console.log ('El total de euros que Abby ganó es '+result)
 }
 dineroAbby (5)
@@ -76,7 +76,7 @@ dineroAbby (5)
 
 function galletasSabrina (cookiesPerBag){
     const totalCookies=92;
-    let result= totalCookies%cookiesPerBag;
+    const result= totalCookies%cookiesPerBag;
     console.log ( "El total de galletas que cada bolsa tendrá es "+result)
 }
 galletasSabrina (8)
@@ -96,7 +96,7 @@ librosCamila(23,45)
 
 function monedasRestantes (coinsPerShelve){
     const totalCoins=123;
-    let result= totalCoins%coinsPerShelve;
+    const result= totalCoins%coinsPerShelve;
     console.log ( "El total de monedas que a Macarena le sobrarán es "+result)
 }
 monedasRestantes (5)
@@ -105,7 +105,7 @@ monedasRestantes (5)
 //1️⃣1️⃣ El coche de Bego consume 7 litros de gasolina por cada 100 kilómetros. Si el tanque tiene 42 litros, ¿cuántos kilómetros podrá recorrer?
 
 function kilometrosParaRecorrer (gasolinLeft,kilometersDriven,gasolinSpent){
-    let result = (gasolinLeft*kilometersDriven)/gasolinSpent;
+    const result = (gasolinLeft*kilometersDriven)/gasolinSpent;
     console.log ('El total de kilometros que Bego podrá recorrer es '+result)
 }
 kilometrosParaRecorrer (42,100,7)
