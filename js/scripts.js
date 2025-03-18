@@ -42,13 +42,12 @@ distanciaRecorrida(90,3,2)
 //*Ejercicio 5
 //5️⃣ Macarena cosechó 240 manzanas y las quiere repartir en 8 cajas. ¿Cuántas manzanas tendrá cada caja?
 
-function manzanasMacarena(boxes){
-    const apples=240;
+function manzanasMacarena(boxes,apples){
     const result=apples/boxes;
     console.log ('El número de manzanas que tendrá cada caja es '+result)
 }
 
-manzanasMacarena(8)
+manzanasMacarena(8,240)
 
 //*Ejercicio 6
 //6️⃣ Bego tiene 57 tornillos y quiere guardarlos en cajitas de 10 tornillos cada una. ¿Cuántos tornillos quedarán fuera?
@@ -115,7 +114,7 @@ kilometrosParaRecorrer (42,100,7)
 
 function gallinasSabrina (roost){
     const hensPerRoost=25;
-    let result= hensPerRoost*roost;
+    const result= hensPerRoost*roost;
     console.log ('El total de gallinas que Sabrina tiene es de '+result)
 }
 
@@ -126,7 +125,7 @@ gallinasSabrina (6)
 
 function balasAbby(totalBullets) {
     const bulletsPerCharger=7;
-    let result=bulletsPerCharger%totalBullets;
+    const result=bulletsPerCharger%totalBullets;
     console.log('El número de balas restantes de Abby es '+result)
 }
 
@@ -147,7 +146,7 @@ kilometrosBego(3,4)
 //1️⃣5️⃣ Camila tiene 100 hojas y quiere agruparlas en pilas de 6. ¿Cuántas hojas quedarán fuera?
 
 function hojasCamila (pagesPerStack,totalPages){
-    let result= totalPages%pagesPerStack;
+    const result= totalPages%pagesPerStack;
     console.log ('El número de hojas restante es de '+result)
 }
 
@@ -158,7 +157,7 @@ hojasCamila (6,100)
 
 function dineroMacarena (totalEuros){
     const accounts=4;
-    let result=totalEuros/accounts;
+    const result=totalEuros/accounts;
     console.log ('Cada cuenta tendrá un total de euros de '+ result)
 }
 
@@ -167,7 +166,7 @@ dineroMacarena(30000)
 //Ejercicio 17
 //1️⃣7️⃣Abby mata 5201 infectados cada semana. ¿Cuántos infectados mata al día?
 function asesinatosAbby (days,murdersPerWeek){
-    let result=murdersPerWeek/days;
+    const result=murdersPerWeek/days;
     console.log('El total de asesinatos que Abby hace al día es de '+result)
 }
 
@@ -177,7 +176,7 @@ asesinatosAbby(7,5201)
 //1️⃣8️⃣ Bego tiene 3 paquetes de canicas, cada paquete contiene 24 canicas. ¿Cuántas canicas tiene en total?
 
 function canicasBego (totalBags, marblesPerBag){
-    let result=totalBags*marblesPerBag;
+    const result=totalBags*marblesPerBag;
     console.log('El total de canicas que Bego tiene es de '+result)
 }
 
@@ -186,7 +185,7 @@ canicasBego (3,24)
 //Ejercicio 19
 //1️⃣9️⃣ Camila y su hermano juntaron 135 monedas. Si Camila aportó 78 monedas, ¿cuántas monedas puso su hermano?
 function monedasCamila (totalCoins,coinsCamila){
-    let coinsBrother=totalCoins-coinsCamila;
+    const coinsBrother=totalCoins-coinsCamila;
     console.log('El numero de monedas que el hermano de Camila aportó es '+coinsBrother)
 }
 
@@ -196,7 +195,7 @@ monedasCamila(135,78)
 //2️⃣0️⃣ Sabrina tiene 500 piezas de lego y quiere dividirlas en lotes de 80 para construir maquetas. ¿Cuántas piezas le quedarán fuera?
 
 function legosSabrina (totalLegos,legosPerBunch){
-    let result=totalLegos%legosPerBunch;
+    const result=totalLegos%legosPerBunch;
     console.log ('El número de legos que le restarán a Sabrina es '+result)
 }
 
@@ -205,7 +204,7 @@ legosSabrina(500,80)
 //Ejercicio 21
 //2️⃣1️⃣ Macarena quiere repartir 72 galletas entre 9 perros. ¿Cuántas galletas recibirá cada perro?
 function galletasPerros(totalCookies,totalDogs){
-    let result=totalCookies/totalDogs;
+    const result=totalCookies/totalDogs;
     console.log('El número de galletas que le tocará a cada perro es de '+result)
 }
 
@@ -214,7 +213,7 @@ galletasPerros(72,9)
 //Ejercicio22
 //2️⃣2️⃣ Abby quiere comprar 5 cuchillos. Si cada uno cuesta 18 euros, ¿cuánto pagará en total?
 function cuchillosAbby(knivesPrice,totalKnives){
-    let result=knivesPrice*totalKnives;
+    const result=knivesPrice*totalKnives;
     console.log('El total que Abby tendrá que pagar por los cuchillos es de '+result)
 }
 
@@ -223,7 +222,7 @@ cuchillosAbby(18,5)
 //Ejercicio23
 //2️⃣3️⃣ Bego tiene 480 galletas y quiere ponerlas en bolsas de 40 galletas cada una. ¿Cuántas bolsas llenará?
 function galletasBego (totalCookies,cookiesPerBag){
-    let result=totalCookies/cookiesPerBag;
+    const result=totalCookies/cookiesPerBag;
     console.log('El número de bolsas que bego tendrá es de '+result)
 }
 
@@ -232,7 +231,7 @@ galletasBego(480,40)
 //Ejercicio24
 //2️⃣4️⃣ Camila recorrió 1.200 km en un viaje de 4 días. ¿Cuántos kilómetros recorrió por día?
 function kilometrosCamila(totalKm,totalDays){
-    let result=totalKm/totalDays;
+    const result=totalKm/totalDays;
     console.log('El número de kilometros que recorrió Camila cada día de su viaje es '+result)
 }
 
@@ -241,7 +240,7 @@ kilometrosCamila(1200,4)
 //Ejercicio25
 //2️⃣5️⃣ Sabrina ahorró 120 euros en enero y 85 euros en febrero. ¿Cuánto dinero ha ahorrado en total?
 function ahorrosSabrina(moneyJanuary,moneyFebruary){
-    let result=moneyJanuary+moneyFebruary;
+    const result=moneyJanuary+moneyFebruary;
     console.log('La cantidad final de euros que Sabrina ahorró es de '+result)
 }
 
@@ -250,7 +249,7 @@ ahorrosSabrina(120,85)
 //Ejercicio26
 //2️⃣6️⃣ Macarena tiene 73 caramelos y quiere repartirlos entre sus amigos en grupos de 6. ¿Cuántos caramelos le sobrarán?
 function caramelosMacarena (totalCandies,groups){
-    let result=totalCandies%groups;
+    const result=totalCandies%groups;
     console.log('El número de caramelos que a Macarena le sobrarán es de '+result)
 }
 
@@ -259,7 +258,7 @@ caramelosMacarena(73,6)
 //Ejercicio27
 //2️⃣7️⃣ Abby registró 17 casas por la mañana y 8 por la tarde. ¿Cuántas casas registró en total?
 function casasAbby (housesMorning,housesEvening){
-    let result=housesEvening+housesMorning;
+    const result=housesEvening+housesMorning;
     console.log('El número total de casas que Abby registro es '+result)
 }
 
@@ -268,7 +267,7 @@ casasAbby(17,8)
 //Ejercicio28
 //2️⃣8️⃣ Bego tiene 95 fotos y quiere hacer álbumes donde caben 12 fotos en cada uno. ¿Cuántas fotos no podrá guardar en los álbumes?
 function albumsBego (totalPhotos,photosPerAlbum){
-    let result= totalPhotos%photosPerAlbum;
+    const result= totalPhotos%photosPerAlbum;
     console.log('El total de fotos que le restarán a Bego es '+result)
 }
 
@@ -277,7 +276,7 @@ albumsBego(95,12)
 //Ejercicio29
 //2️⃣9️⃣ Camila tiene un descuento de 15 euros en un producto que cuesta 120 euros. ¿Cuánto cuesta el producto después del descuento?
 function descuentoCamila (originalPrice,discount){
-    let result=originalPrice-discount;
+    const result=originalPrice-discount;
     console.log('El precio final del producto es '+result)
 }
 
@@ -286,7 +285,7 @@ descuentoCamila(120,15)
 //Ejercicio30
 //3️⃣0️⃣ Sabrina tiene 500 gramos de harina y quiere hacer porciones de 24 gramos cada una para preparar galletas. ¿Cuánta harina le sobrará después de hacer todas las porciones completas?
 function harinaSabrina (totalFlour,flourPerPortion){
-    let result= totalFlour%flourPerPortion;
+    const result= totalFlour%flourPerPortion;
     console.log('Al final a Sabrina le restará un total de harina de '+result)
 }
 
