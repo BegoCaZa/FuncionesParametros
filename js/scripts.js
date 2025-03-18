@@ -32,9 +32,9 @@ caramelosCamila (4)
 //*Ejercicio 4
 //4️⃣ Sabrina recorre 90 kilómetros en 3 horas. ¿Cuántos kilómetros recorre en 2 horas?
 
-function distanciaRecorrida(distanciaTotal, tiempoTotal, tiempoConsulta) {
-    let velocidad = (distanciaTotal / tiempoTotal)*tiempoConsulta; 
-    console.log("En dos horas Sabrina recorre "+ velocidad)
+function distanciaRecorrida(totalDistance, totalTime, requestedTime) {
+    let speed = (totalDistance / totalTime)*requestedTime; 
+    console.log("En dos horas Sabrina recorre "+ speed)
 }
 
 distanciaRecorrida(90,3,2)
